@@ -75,6 +75,6 @@ jobs:
       uses: aws-actions/amazon-ecs-deploy-task-definition@v1
       with:
         task-definition: ${{ steps.task-def.outputs.task-definition }}
-        service: next-poc
+        service: next-pocc
         cluster: next-poc
         wait-for-service-stability: false
