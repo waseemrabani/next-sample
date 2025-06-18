@@ -12,3 +12,4 @@ jobs:
         with:
           image-name: 'my-app'
           optimization-level: 'standard'
+          
