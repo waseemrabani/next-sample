@@ -1,0 +1,14 @@
+name: Optimize Docker Image
+on: [push]
+
+jobs:
+  optimize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Optimize Docker Image
+        uses: waseemrabani/docker-image-optimizer-action@master
+        with:
+          image-name: 'my-app'
+          optimization-level: 'standard'
